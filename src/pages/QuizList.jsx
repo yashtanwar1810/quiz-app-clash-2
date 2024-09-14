@@ -26,7 +26,7 @@ function QuizList() {
       <h2 className="text-3xl font-bold mb-4">Available Quizzes</h2>
       <ul className="space-y-4">
         {quizzes.map((quiz) => (
-          <li key={quiz.id} className="border p-4 rounded-md shadow-sm">
+          <li key={quiz.id} className="hover:bg-slate-200 hover:scale-[1.010] border p-4 rounded-md shadow-sm">
             <Link
               to={`/quiz/${quiz.id}`}
               className="text-xl font-semibold text-blue-600 hover:underline"
@@ -38,7 +38,13 @@ function QuizList() {
         ))}
       </ul>
 
-      <Link to="/createquiz">Create a Quiz</Link>
+      <Link
+          to="/createquiz"
+          className="m-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+        >
+          Create a New Quiz
+        </Link>
+        
     </div>
   );
 }

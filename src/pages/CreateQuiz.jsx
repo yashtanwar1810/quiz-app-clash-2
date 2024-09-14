@@ -51,7 +51,7 @@ function QuizCreation() {
     <div className="max-w-4xl mx-auto p-6">
       <h2 className="text-3xl font-bold mb-4">Create a New Quiz</h2>
       {error && <p className="text-red-500 mb-4">{error}</p>}
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="p-2 space-y-4">
         <div className="space-y-2">
           <label className="block text-lg font-semibold">Title:</label>
           <input
@@ -72,7 +72,7 @@ function QuizCreation() {
           />
         </div>
         {questions.map((q, index) => (
-          <div key={index} className="border p-4 rounded-md shadow-sm space-y-4">
+          <div key={index} className="border border-black p-4 rounded-md shadow-sm space-y-4">
             <h3 className="text-xl font-semibold">Question {index + 1}</h3>
             <div className="space-y-2">
               <label className="block text-lg font-semibold">Question Text:</label>
@@ -152,13 +152,13 @@ function QuizCreation() {
         <button
           type="button"
           onClick={handleAddQuestion}
-          className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+          className="mx-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
         >
           Add Another Question
         </button>
         <button
           type="submit"
-          className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
+          className="mr-4 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
         >
           Create Quiz
         </button>

@@ -25,7 +25,7 @@ const SignUpForm = () => {
         email: user.email,
       });
       console.log('User signed up and data stored:', user);
-      navigate('/profile');
+      navigate('/home');
     } catch (error) {
       console.error('Error signing up:', error);
     }

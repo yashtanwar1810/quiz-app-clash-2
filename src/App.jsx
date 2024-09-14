@@ -8,10 +8,10 @@ import {
 } from "react-router-dom";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import Dashboard from "./pages/Home";
 import QuizCreation from "./pages/CreateQuiz";
 import QuizList from "./pages/QuizList";
 import QuizTaking from "./pages/TakeQuize";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/quizlist" element={<QuizList />} />
         <Route path="/createquiz" element={<QuizCreation />} />
         <Route path="/quiz/:quizId" element={<QuizTaking />} />{" "}

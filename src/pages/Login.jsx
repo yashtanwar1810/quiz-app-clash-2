@@ -19,7 +19,7 @@ const LoginForm = () => {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
-      navigate('/dashboard');
+      navigate('/home');
     } catch (error) {
       console.error('Error logging in:', error);
     }

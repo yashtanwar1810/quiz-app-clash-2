@@ -41,7 +41,7 @@ const SignUpForm = () => {
         phone: '', // Optional: Handle phone number if available
       });
       console.log('User signed in with Google and data stored:', user);
-      navigate('/profile');
+      navigate('/home');
     } catch (error) {
       console.error('Error signing in with Google:', error);
     }

@@ -45,7 +45,7 @@ const LoginForm = () => {
       //   phone: '', // Optional: Handle phone number if available
       // });
       console.log('User signed in with Google and data stored:', user);
-      navigate('/dashboard');
+      navigate('/home');
     } catch (error) {
       console.error('Error signing in with Google:', error);
     }

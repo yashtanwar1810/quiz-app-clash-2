@@ -1,5 +1,5 @@
 // src/components/QuizCreation.js
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { db } from '../firebase';
 import { collection, addDoc } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
@@ -19,7 +19,7 @@ function QuizCreation() {
       { question: '', type: 'mcq', options: ['', ''], correctOption: '' },
     ]);
   };
-
+  
   const handleQuestionChange = (index, field, value) => {
     const newQuestions = [...questions];
     newQuestions[index][field] = value;
